@@ -103,19 +103,18 @@ body{
     border-color: red;
 }
 #select1{
-    margin-right: 10px;
     cursor: pointer;
     background: none;
-    padding-right: 10px;
     font-size: 15px;
     border: none;
 }
-.select12{
+#select12{
   color: red;
   border: 1px solid red;
   padding: 8px;
+  cursor: pointer;
 }
-.select12:hover{
+#select12:hover{
   background-color: #f9ecec;
   border: 1px solid rgb(244, 188, 188);
 
@@ -227,11 +226,7 @@ body{
     display: none;
   }
 
-  #span11:hover{
-    padding: 10px;
-    background-color: rgb(244, 239, 239);
-    cursor: pointer;
-  }
+
   .flg{
     height: 15px;
     width: 22px;
