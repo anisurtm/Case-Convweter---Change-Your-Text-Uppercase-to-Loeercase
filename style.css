@@ -104,17 +104,24 @@ body{
 }
 #select1{
     margin-right: 10px;
-    padding: 8px;
-    border-color: red;
     cursor: pointer;
-    background-color: white;
-    border: 1px solid red;
+    background: none;
     padding-right: 10px;
     font-size: 15px;
+    border: none;
+}
+.select12{
+  color: red;
+  border: 1px solid red;
+  padding: 8px;
+}
+.select12:hover{
+  background-color: #f9ecec;
+  border: 1px solid rgb(244, 188, 188);
+
 }
 #select1:hover{
     background-color: #f9ecec;
-    border: 1px solid rgb(244, 188, 188);
 }
 .font1{
     padding: 7px;
