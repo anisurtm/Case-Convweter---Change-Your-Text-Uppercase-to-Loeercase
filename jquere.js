@@ -79,6 +79,51 @@ function reStyle(n) {
 }
 reStyle(0);
 
+
+function clearData(){
+  document.getElementById('input1').value= '';
+}
+
+function copyText() {
+  var copyText = document.getElementById("input1");
+  copyText.select();
+
+  copyText.setSelectionRange(0, 99999); 
+  navigator.clipboard.writeText(copyText.value);
+}
+
+let inpText = document.getElementById("input1");
+let result1 = document.getElementById('input1');
+function upper(){
+  result1.value = inpText.value.toUpperCase();
+}
+function lower(){
+  
+  result1.value = inpText.value.toLowerCase();
+}
+
+
+function Capitaliz(){
+   let CapitalizW = document.getElementById('input1').value;
+
+}
+
+function Capitaliz() {
+  // Get the input text
+  let inpText1 = document.getElementById('input1').value;
+
+  // Capitalize the first letter of each word
+  let words = inpText1.split(' ');
+  let capitalizedWords = words.map(function(word) {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  });
+  let result1 = capitalizedWords.join(' ');
+  let x= document.getElementById('input1');
+
+  // Display the result
+  x.value = result1;
+}
+
 // function showHide() {
 //     document.getElementById('div7').style.display = "block";
 //  }
