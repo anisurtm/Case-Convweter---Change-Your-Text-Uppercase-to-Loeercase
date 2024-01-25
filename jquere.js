@@ -169,7 +169,7 @@ function Sentce(){
 
 function aLtErNaTe(){
   let i1np =document.getElementById('input1');
-  let i2npo =i1np.value.split('');
+  let i2npo =i1np.value.toLowerCase().split('');
   console.log(i2npo);
   for (let i=0; i<i2npo .length; i++ )
   // console.log();
