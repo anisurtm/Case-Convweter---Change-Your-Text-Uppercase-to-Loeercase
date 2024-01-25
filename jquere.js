@@ -158,7 +158,7 @@ function Capitliz() {
 
 function Sentce(){
   let inp =document.getElementById('input1');
-  let inpo =inp.value.split('. ');
+  let inpo =inp.value.toLowerCase().split('. ');
   console.log(inpo);
   for (let i = 0; i < inpo.length; i++)
   {
