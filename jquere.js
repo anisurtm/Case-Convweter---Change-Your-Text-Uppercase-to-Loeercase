@@ -144,6 +144,47 @@ function JustClick(){
   toogel.value=input2.join('');
 }
 
+function Capitliz() {
+  let i2np =document.getElementById('input1');
+	let str = i2np.value.toLowerCase().split(' ');
+	for (let i = 0; i < str.length; i++)
+   {
+		str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+    // console.log(str[i]);
+	}
+  i2np.value=str.join(' ');
+}
+
+
+function Sentce(){
+  let inp =document.getElementById('input1');
+  let inpo =inp.value.split('. ');
+  console.log(inpo);
+  for (let i = 0; i < inpo.length; i++)
+  {
+    inpo[i] = inpo[i].charAt(0).toUpperCase() + inpo[i].slice(1);
+  }
+  inp.value=inpo.join('.');
+}
+
+function aLtErNaTe(){
+  let i1np =document.getElementById('input1');
+  let i2npo =i1np.value.split('');
+  console.log(i2npo);
+  for (let i=0; i<i2npo .length; i++ )
+  // console.log();
+  {
+    if (i % 2 !=0)
+    {
+      i2npo[i]=i2npo[i].toUpperCase();
+      console.log(i2npo[i])
+    }
+  }
+  i1np.value=i2npo.join('');
+}
+// console.log(Capitliz("geeks for geeks"));
+
+
 // function showHide() {
 //     document.getElementById('div7').style.display = "block";
 //  }
