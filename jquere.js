@@ -124,6 +124,26 @@ function Capitaliz() {
   x.value = result1;
 }
 
+function JustClick(){
+  let toogel = document.getElementById('input1');
+  let input2 = toogel.value.split('');
+  // console.log(input2);
+
+    for (let i = 0; i< input2.length; i++)
+    // console.log(input2[i]);
+  {
+    if (input2[i] >= 'A' && input2[i]<='Z')
+    {
+      input2[i]=input2[i].toLowerCase();
+    }
+    else if (input2[i] >= 'a' && input2[i]<='z')
+    {
+      input2[i]=input2[i].toUpperCase();
+    }
+  }
+  toogel.value=input2.join('');
+}
+
 // function showHide() {
 //     document.getElementById('div7').style.display = "block";
 //  }
